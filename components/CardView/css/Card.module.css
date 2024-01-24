@@ -1,0 +1,108 @@
+.wrapper {
+    left: 15%;
+    top: 0;
+    margin-top: auto;
+    margin-bottom: 10%;
+    bottom: 10%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding: 25px;
+    width: 25%;
+    height: max-content;
+    background-color: #9B2F9B;
+    border-radius: 40px;
+}
+
+.title {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.detail {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.leftLinkWrapper {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.leftLink {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-right: 5px;
+}
+
+.icon {
+    background-image: url(../assets/Vector.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 20.13px;
+    height: 12.94px;
+}
+
+@media screen and (max-width: 1184px) {
+    .wrapper {
+        margin-bottom: 12%;
+        bottom: 12%;
+    }
+
+}
+
+@media screen and (max-width: 1184px) {
+    .wrapper {
+        margin-bottom: 14%;
+        bottom: 12%;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        width: 80%;
+        top: 0;
+        margin-top: auto;
+        margin-bottom: 22%;
+        bottom: 22%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .wrapper {
+        position: absolute;
+        width: 80%;
+        top: 0;
+        margin-top: auto;
+        margin-bottom: 24%;
+        bottom: 24%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .wrapper {
+        position: absolute;
+        width: 80%;
+        top: 0;
+        margin-top: auto;
+        margin-bottom: 32%;
+        bottom: 32%;
+    }
+}

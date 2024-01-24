@@ -1,0 +1,149 @@
+.FeaturedContainer {
+  min-height: 90vh;
+  width: 100%;
+  position: relative;
+  background-color: var(--background-light);
+}
+.FeaturedWrapper {
+  width: 100%;
+  height: 100%;
+  padding: 70px 110px;
+  z-index: 2;
+  position: relative;
+}
+.Background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  opacity: 0.1;
+}
+.Background span {
+  position: relative;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 200px;
+  line-height: 242px;
+  color: var(--primary);
+}
+.FeaturedCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 37px 40px;
+}
+.MobileCards {
+  display: none !important;
+}
+.FeaturedCard {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 380px;
+}
+.FeaturedCard img {
+  width: 80px;
+  height: 80px;
+}
+.FeaturedCard h3,
+.FeaturedCard h4 {
+  font-family: "SF Pro Display";
+  color: var(--dark) !important;
+  padding: 0;
+  margin: 0;
+}
+.Head1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  padding-top: 24px !important;
+}
+.Head2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  padding-top: 8px !important;
+}
+.Desc {
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--dark-secondary);
+  padding-top: 8px !important;
+}
+
+@media screen and (min-width: 1900px) {
+  .FeaturedWrapper {
+    padding: 150px 200px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .FeaturedWrapper {
+    padding: 65px 105px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .FeaturedWrapper {
+    padding: 65px 105px;
+  }
+  .FeaturedCard img {
+    width: 65px;
+    height: 65px;
+  }
+  .Head1 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .Head2,
+  .Desc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .FeaturedWrapper {
+    padding: 65px 105px;
+  }
+  .FeaturedContainer {
+    height: auto;
+  }
+  .Background {
+    display: none;
+  }
+  .FeaturedCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 37px 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .FeaturedWrapper {
+    padding: 56px 24px;
+  }
+  .FeaturedCards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 37px 0;
+    justify-items: center;
+  }
+  .FeaturedCard {
+    height: auto;
+    max-width: 400px;
+  }
+  .MobileCards {
+    display: grid !important;
+  }
+  .TabCards {
+    display: none !important;
+  }
+}

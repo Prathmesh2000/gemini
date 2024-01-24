@@ -1,0 +1,25 @@
+.wrapper {
+    position: relative;
+    padding: 5%;
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        padding: 0;
+        padding-top: 25px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .wrapper {
+        padding: 0;
+        padding-top: 75px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .wrapper {
+        padding: 0;
+        padding-top: 150px;
+    }
+}

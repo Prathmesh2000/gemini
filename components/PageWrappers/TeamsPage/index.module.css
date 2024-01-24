@@ -1,0 +1,130 @@
+.teamsWrapper {
+    display: flex;
+    padding: 0% 10% 0% 10%;
+    background-color: #E7F2FA;
+}
+
+.categoryWrapper {
+    display: flex;
+   
+    /* justify-content: center; */
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.selectedCategoryWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.selectedCategory {
+    margin: 20px 0px 0px 32px;
+    font-family: "SF Pro Display";
+    font-style: "normal";
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 38px;
+    text-transform: capitalize;
+    color: #205072;
+}
+
+.selectedCategoryTotalMembers {
+    margin: 20px 0px 0px 16px;
+    
+
+    font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+color: #405261;
+
+
+}
+
+.contactUsWrapper {
+    display: flex; 
+    /* height: 100vh; */
+    width: 100%;
+    margin-top: 100px;
+    background-color: white;
+  
+}
+
+.contactUsForm {
+    padding: 100px 10% 100px 10%; 
+    width: 70%;
+}
+
+.contactUsImage {
+  /* width: 30%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 3; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+}
+
+
+.contactUsImageWrapper {
+    width: 30%;
+    /* height: 100%; */
+    z-index: 10;
+}
+
+
+
+@media screen and (max-width: 1260px) {
+    .contactUsForm {
+        padding: 0px 10% 50px 10%;
+        width: 100%;
+    }
+    .contactUsImageWrapper {
+        width: 30%;
+        z-index: 10;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .contactUsImage {
+        display: none;
+    }
+    .teamsWrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 0% 10% 0% 10%;
+    
+        background-color: #E7F2FA;
+    }
+
+    .selectedCategory {
+        margin: 29px 8px 0px 0px;
+      
+        color: #205072;
+
+        font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+    }
+
+    .selectedCategoryTotalMembers { 
+         margin: 32px 0px 0px 8px;
+        font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+
+/* text-align: center; */
+
+
+color: #1B2F3F;
+    }
+    
+}

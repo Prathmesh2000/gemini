@@ -1,0 +1,133 @@
+.wrapper {
+    display: block;
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.serviceName {
+    width: 100%;
+    height: max-content;
+    top: 5%;
+    margin-top: 5%;
+    bottom: 0;
+    margin-bottom: auto;
+    left: 0%;
+    margin-left: 10%;
+    right: 0;
+    margin-right: auto;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    color: #92A0B3;
+}
+
+.cardsContainer {
+    display: flex;
+    height: max-content;
+    flex-wrap: wrap;
+    width: 35%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 5%;
+    margin-top: auto;
+    margin-bottom: 5%;
+    left: 0;
+    right: 2%;
+    margin-left: auto;
+    margin-right: 2%;
+}
+
+.backgroundImage {
+    position: absolute;
+    width: 251.6px;
+    height: 204.67px;
+    background-image: url(../assets/background.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 5%;
+    left: 0;
+    margin-left: auto;
+    right: 2%;
+    margin-right: 2%;
+}
+
+@media screen and (max-width: 2000px) {
+    .cardsContainer {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .cardsContainer {
+        width: 37%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .cardsContainer {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .cardsContainer {
+        width: 50%;
+        right: 0;
+        margin-right: auto;
+        left: 55%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .cardsContainer {
+        width: 50%;
+        right: 0;
+        margin-right: auto;
+        left: 55%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .cardsContainer {
+        margin-bottom: 1%;
+        bottom: 1%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .wrapper {
+        top: 56px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .serviceName {
+        display: none;
+    }
+
+    .backgroundImage {
+        display: none;
+    }
+
+    .wrapper {
+        height: max-content;
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .cardsContainer {
+        left: 0;
+        right: 0;
+        margin-top: 15px;
+        max-width: 500px;
+        display: flex;
+        position: relative;
+        width: 80%;
+        padding: 0;
+        height: max-content;
+    }
+}

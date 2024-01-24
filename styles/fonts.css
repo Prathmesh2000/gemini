@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "SF Pro Display";
+  src: local("'SF Pro Display'"),
+    url(../public/fonts/SFProDisplay-Regular.ttf) format("truetype");
+  display: swap;
+}
+
+@font-face {
+  font-family: Euclid Circular B;
+  src: local("Euclid Circular B"),
+    url(../public/fonts/Euclid-Circular-B-Regular.ttf) format("truetype");
+  display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  src: local("Inter"),
+    url(../public/fonts/Inter-Regular.ttf) format("truetype");
+  display: swap;
+}

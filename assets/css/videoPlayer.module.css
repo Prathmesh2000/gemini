@@ -1,0 +1,211 @@
+.playerWrapper {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 669px;
+  max-width: 1200px;
+  margin: 2.5rem auto 5rem;
+  width: 100%;
+  height: 100vw;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #9b2f9b;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #405261;
+  text-align: center;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 13% !important;
+  left: 83% !important;
+}
+
+.reactPlayer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 24%;
+  border-radius: 40px;
+  overflow: hidden;
+  z-index: 9;
+  /* min-height: 250px; */
+  max-height: 500px;
+}
+
+.playButton {
+  width: 8%;
+  height: 15%;
+  background-color: transparent;
+  border-radius: 20px;
+  color: white;
+  position: absolute;
+  top: 44%;
+  left: 44%;
+}
+
+.playButtonImage {
+  width: 100%;
+  height: 100%;
+  background-image: url(../../public/playIcon.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+
+.thumbnailWrapper {
+  width: 75%;
+  height: auto;
+  max-height: 507px;
+  position: absolute;
+  left: 12.5%;
+  top: 24%;
+}
+.thumbnailImage {
+  width: 100%;
+  border-radius: 39px;
+}
+@media only screen and (max-width: 1160px) {
+  .backgroundImage {
+    position: absolute;
+    top: 13% !important;
+    left: 82.5% !important;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .backgroundImage {
+    position: absolute;
+    top: 13% !important;
+    left: 82% !important;
+  }
+  .playButton {
+    top: 43.5% !important;
+    left: 45% !important;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .backgroundImage {
+    position: absolute;
+    top: 13% !important;
+    left: 81.5% !important;
+  }
+  .playButton {
+    top: 43% !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .backgroundImage {
+    position: absolute;
+    top: 13% !important;
+    left: 81% !important;
+  }
+  .playerWrapper {
+    margin-bottom: 0rem;
+  }
+  .playButton {
+    top: 42.5% !important;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .backgroundImage {
+    position: absolute;
+    top: 13% !important;
+    left: 80.5% !important;
+  }
+  .playButton {
+    top: 42% !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .backgroundImage {
+    position: absolute;
+    top: 13% !important;
+    left: 80% !important;
+  }
+  .playButton { 
+    top: 41.5% !important;
+    left: 46% !important;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .backgroundImage {
+    position: absolute;
+    top: 13% !important;
+    left: 80.5% !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .backgroundImage {
+    position: absolute;
+    top: 13% !important;
+    left: 80% !important;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  .playerWrapper {
+    margin: 4rem auto 0rem;
+    min-height: 330px;
+    max-height: 530px;
+  }
+  .backgroundImage {
+    display: none;
+  }
+  .header {
+    justify-content: left;
+    align-items: left;
+  }
+  .title {
+    width: 100%;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+  }
+  .subtitle {
+    width: 100%;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .reactPlayer {
+    border-radius: 16px;
+  }
+  .thumbnailWrapper {
+    left: 12.5%;
+    top: 32%;
+  }
+  .thumbnailImage {
+    border-radius: 0%;
+  }
+}

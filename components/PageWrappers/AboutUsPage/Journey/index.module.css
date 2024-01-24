@@ -1,0 +1,177 @@
+.journeyWrapper {
+  background: #fbf1fb;
+  padding: 10% 10%;
+}
+.journeyTitle {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #9b2f9b;
+  margin-bottom: 1rem;
+}
+.journeyHeading {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  text-transform: capitalize;
+  color: #1b2f3f;
+  margin-bottom: 2rem;
+}
+.verticalTimelineElement {
+  padding: 0rem !important;
+}
+.VerticalTimeline {
+  padding: 0rem !important;
+}
+.VerticalTimeline::before {
+  height: 97% !important;
+}
+.dateMainWrapper {
+  opacity: 1 !important;
+  padding: 0rem !important;
+  top: 0px !important;
+}
+.iconStyles {
+  background: rgb(155, 47, 155) !important;
+  color: #d1dae7 !important;
+  width: 28px !important;
+  height: 28px !important;
+  left: 51.5% !important;
+}
+.VerticalTimelineDateWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.reversedVerticalTimelineDateWrapper {
+  justify-content: flex-end;
+}
+.VerticalTimelineDate {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: capitalize;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background: #9b2f9b;
+  padding: 8px 24px;
+  border-radius: 40px;
+}
+.locationWrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 1rem;
+  align-items: center;
+}
+.reverseLocationWrapper {
+  justify-content: flex-start;
+}
+.card_title {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: #1b2f3f;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  padding-right: 0.5rem;
+}
+.card_subtitle {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: #9b2f9b !important;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 32px;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.reverseTextWrapper {
+  align-items: flex-end;
+  text-align: end;
+}
+.main_text {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 150% !important;
+  text-transform: capitalize;
+  color: #405261;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.visit_us {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: capitalize;
+  color: #9b2f9b;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+@media (max-width: 1170px) {
+  .reverseTextWrapper {
+    align-items: flex-start;
+    text-align: start;
+  }
+  .locationWrapper {
+    justify-content: flex-start;
+  }
+  .iconStyles {
+    left: 1.05% !important;
+  }
+  .VerticalTimelineDateWrapper {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .VerticalTimeline {
+    margin: 0rem !important;
+  }
+}
+@media (max-width: 800px) {
+  .journeyWrapper {
+    background: #fbf1fb;
+    padding: 10% 6.66%;
+  }
+  .VerticalTimelineDate {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

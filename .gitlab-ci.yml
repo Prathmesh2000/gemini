@@ -1,0 +1,15 @@
+Dev Deploy:
+  script:
+  - pm2 deploy pm2.json dev
+  type: deploy
+  only:
+  - dev
+
+Staging Deploy:
+  script:
+  - pm2 deploy pm2.json staging
+  type: deploy
+  only:
+  - staging
+
+

@@ -1,0 +1,153 @@
+.ValuesContainer {
+  min-height: 90vh;
+  width: 100%;
+  background-color: var(--white);
+}
+.ValuesWrapper {
+  width: 100%;
+  height: 100%;
+  padding: 100px 150px;
+}
+.Background {
+  position: absolute;
+  right: 0;
+  top: 54px;
+  z-index: 2;
+}
+.Values {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.ValuesHead {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-bottom: 56px;
+}
+.Title,
+.Heading,
+.Desc {
+  font-family: "SF Pro Display";
+  font-weight: 700;
+  text-transform: capitalize;
+  text-transform: capitalize;
+  max-width: 680px;
+}
+.Title {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase !important;
+  color: var(--primary);
+  text-align: center;
+  padding-bottom: 8px;
+}
+.Heading {
+  font-size: 40px;
+  line-height: 52px;
+  color: var(--dark);
+  padding-bottom: 8px;
+}
+.Desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--dark-secondary);
+}
+.ValuesCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0 24px;
+  justify-items: center;
+  z-index: 1;
+}
+.Card {
+  min-height: 500px;
+  box-shadow: 0px 0px 50px rgba(69, 10, 69, 0.1);
+  border-radius: 18px;
+  padding-bottom: 52px;
+  max-width: 400px;
+}
+.CardImage {
+  height: auto;
+  width: 100%;
+  padding-bottom: 24px;
+}
+.CardTitle,
+.CardDesc {
+  font-family: "SF Pro Display";
+  width: 100%;
+  padding: 0 24px;
+}
+.CardTitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: var(--dark);
+  padding-bottom: 16px;
+}
+.CardDesc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: var(--dark-secondary);
+}
+.SmallScreen {
+  display: none !important;
+}
+.LargeScreen {
+  display: grid;
+}
+@media screen and (max-width: 1400px) {
+  .ValuesCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px 24px;
+  }
+  .Background {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .ValuesWrapper {
+    padding: 55px 100px;
+  }
+  .ValuesCards {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px 24px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .ValuesWrapper {
+    padding: 50px 100px;
+  }
+  .ValuesCards {
+    grid-template-columns: 1fr;
+  }
+  .SmallScreen {
+    display: grid !important;
+  }
+  .LargeScreen {
+    display: none;
+  }
+  .ValuesHead {
+    align-items: flex-start;
+  }
+  .Desc {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ValuesWrapper {
+    padding: 56px 24px;
+  }
+}

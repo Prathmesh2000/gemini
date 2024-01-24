@@ -1,0 +1,293 @@
+.tabWrapper {
+  padding: 10% 10% 0% 10%;
+  border-bottom: 1px solid #d1dae7;
+}
+
+.mainTitle {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #9b2f9b;
+}
+.mainHeading {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  text-transform: capitalize;
+  color: #1b2f3f;
+  margin: 1rem 0rem 4.375rem;
+}
+
+/* cards */
+.cardWrapper {
+  display: flex;
+  margin: 4% 10% 8% 37%;
+  background: #fdf4fe;
+  border-radius: 24px;
+  position: relative;
+  justify-content: flex-end;
+}
+.cardImagePlus {
+  position: absolute;
+  top: 3%;
+  left: calc(-50% - 35px);
+  z-index: 2;
+}
+.cardImageWrapper {
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  left: -50%;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 0px 0px 50px rgb(69 10 69 / 20%);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  justify-content: right;
+  padding-left: 3rem;
+}
+.cardImageText {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: capitalize;
+  color: #9b2f9b;
+  opacity: 0.1;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+}
+.cardImage {
+  width: 75%;
+  height: 100%;
+}
+.singleTab {
+  margin: 0px 5% 0px 0px !important;
+  padding-left: 0px !important;
+}
+.cardTextWrapper {
+  padding: 16% 5% 10% 0%;
+}
+.CardNumber {
+  position: absolute;
+  top: -300%;
+  left: 0%;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 153px;
+  text-transform: capitalize;
+  color: #9b2f9b;
+  opacity: 0.1;
+}
+.cardTitle {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #1b2f3f;
+}
+.cardSubTitle {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #405261;
+  padding: 0.5rem 0rem 1rem;
+}
+.cardParagraph {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #405261;
+}
+.mobileCarousel {
+  display: none;
+}
+@media only screen and (min-width: 900px) and (max-width: 1000px) {
+  .cardImage {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 900px) {
+  .cardImage {
+    width: 67%;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 955px) {
+  .CardNumber {
+    top: -170% !important;
+  }
+}
+@media (max-width: 800px) {
+  .tabWrapper {
+    padding: 8% 6.66%;
+    border: none;
+  }
+  .carousel {
+    display: none;
+  }
+  .carouselCards {
+    display: none;
+  }
+  .mainHeading {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130%;
+    text-transform: capitalize;
+    color: #1b2f3f;
+    margin: 0.5rem 0rem 2.5rem;
+  }
+  .mobileCarousel {
+    display: block;
+  }
+  .actionButtonMobile {
+    margin-top: 1.75rem;
+    display: flex;
+    align-items: center;
+  }
+  .actionPrevIcons {
+    width: 50px;
+    height: 50px;
+    background: url("../../../../public/valueLeftArrow.svg") no-repeat center;
+    border: none;
+    cursor: pointer;
+  }
+  .actionNextIcons {
+    width: 50px;
+    height: 50px;
+    background: url("../../../../public/valueRightArrow.svg") no-repeat center;
+    border: none;
+    cursor: pointer;
+  }
+  .mobileCard {
+    min-height: 490px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px 16px;
+    background: #fdf4fe;
+    border-radius: 16px;
+    margin-right: 1rem;
+  }
+  .mobileCardImage {
+    height: auto;
+    width: 100%;
+    padding-bottom: 24px;
+  }
+  .mobileCardNumber {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 76px;
+    text-transform: capitalize;
+    color: #9b2f9b;
+    opacity: 0.1;
+    flex: none;
+    flex-grow: 0;
+    text-shadow: -2px -2px #3c79e6, -2px -1.5px #3c79e6, -2px -1px #3c79e6,
+      -2px -0.5px #3c79e6, -2px 0px #3c79e6, -2px 0.5px #3c79e6,
+      -2px 1px #3c79e6, -2px 1.5px #3c79e6, -2px 2px #3c79e6, -1.5px 2px #3c79e6,
+      -1px 2px #3c79e6, -0.5px 2px #3c79e6, 0px 2px #3c79e6, 0.5px 2px #3c79e6,
+      1px 2px #3c79e6, 1.5px 2px #3c79e6, 2px 2px #3c79e6, 2px 1.5px #3c79e6,
+      2px 1px #3c79e6, 2px 0.5px #3c79e6, 2px 0px #3c79e6, 2px -0.5px #3c79e6,
+      2px -1px #3c79e6, 2px -1.5px #3c79e6, 2px -2px #3c79e6, 1.5px -2px #3c79e6,
+      1px -2px #3c79e6, 0.5px -2px #3c79e6, 0px -2px #3c79e6,
+      -0.5px -2px #3c79e6, -1px -2px #3c79e6, -1.5px -2px #3c79e6;
+  }
+  .mobileCardTitle {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #1b2f3f;
+  }
+  .mobileCardSub {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #405261;
+    margin: 0.5rem 0rem 1rem;
+  }
+  .mobileCardDesc {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #405261;
+  }
+}
+
+/* slick dots */
+.button__bar li {
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.button__bar li button {
+  line-height: 0;
+  display: block;
+  width: 1rem;
+  height: 5px;
+  padding: 0px;
+  cursor: pointer;
+  color: transparent;
+  outline: none;
+  background: #d1dae7;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  border: none;
+  outline: none;
+}
+
+.button__bar li.slick-active button {
+  background-color: white;
+}
+
+.slick-slide img {
+  border: 5px solid #fff;
+  display: block;
+  margin: auto;
+}
+
+.button__bar :global(li.slick-active) button {
+  background: #9b2f9b;
+  border-radius: 4px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  width: 40px;
+  border: none;
+  outline: none;
+}

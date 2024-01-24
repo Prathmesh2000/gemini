@@ -1,0 +1,109 @@
+/* certificate insights */
+.certificate {
+  margin: 6.25rem 9.563rem;
+}
+.certificatetop {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0rem auto 4.5rem;
+}
+.certificateheading {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1px;
+  color: #1b2f3f;
+}
+.certificatecards {
+  display: flex;
+}
+.certificatecard {
+  background: #ffffff;
+  box-sizing: border-box;
+  width: 33.33%;
+}
+.certificatecardcenter {
+  margin: 0rem;
+  border-left: 1px solid #d1dae7;
+  border-right: 1px solid #d1dae7;
+  width: 33.33%;
+}
+.certificatemobilewrapper {
+  padding: 1.813rem 0rem;
+}
+.certificateCardImage {
+  text-align: center;
+}
+.certificateCardImageTag {
+  object-fit: fill;
+  width: 50%;
+  height: 50%;
+}
+.certificatecardtext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem;
+  margin: 1.978rem 3rem 0.5rem;
+}
+.certificatecardsubText {
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #405261;
+  text-align: center;
+}
+@media only screen and (min-width: 950px) and (max-width: 1350px) {
+  .certificate {
+    margin: 5rem 5.375rem !important;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 950px) {
+  .certificate {
+    margin: 5rem 0.375rem !important;
+  }
+}
+@media (max-width: 800px) {
+  .certificate {
+    margin: 2rem 1.5rem 0.5rem;
+  }
+  .certificatetop {
+    margin: 0rem auto 0.5rem;
+  }
+  .certificateheading {
+    font-size: 32px;
+    line-height: 120%;
+  }
+  .certificatecards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .certificatecard {
+    margin: 2rem 0rem;
+    width: 85%;
+  }
+  .certificatecardcenter {
+    border: none;
+    width: 85%;
+  }
+  .certificatemobilewrapper {
+    padding: 0rem;
+  }
+  .certificateCardImageTag {
+    width: 45%;
+    height: 45%;
+  }
+  .certificatecardtext {
+    margin: 0rem;
+  }
+}

@@ -1,0 +1,3 @@
+BASE_URL= 
+NO_INDEX = #true/false
+PUBLICATION_STATE= #preview/live

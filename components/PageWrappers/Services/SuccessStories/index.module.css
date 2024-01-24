@@ -1,0 +1,275 @@
+/* stories insights */
+.stories {
+  padding: 5rem 10% 0rem;
+  background: linear-gradient(white 51%, #9b2f9b 49%);
+}
+.storiestop {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0rem 0rem 4.5rem;
+}
+.storiesheading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #1b2f3f;
+  margin: 0rem 0rem 1rem;
+}
+.storiessubText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #405261;
+  margin: 0rem;
+}
+.storiescards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.storiescard {
+  background: #ffffff;
+  box-sizing: border-box;
+  border-radius: 16px;
+  min-width: 250px;
+  border: 1px solid #d1dae7;
+}
+.storiescardcenter {
+  margin: 0rem 2.5rem;
+}
+/* .storiesCardImage {
+    margin: auto;
+  } */
+.storiesCompanyWrapper {
+  display: flex;
+  /* justify-content: flex-end; */
+  justify-content: space-between;
+
+  /* position: relative; */
+}
+.storiesComponyImage {
+  height: 700%;
+  position: absolute;
+  top: -380%;
+}
+.storiescardtext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem;
+  margin: 3.2rem 1.5rem 2.5rem;
+}
+.storiescardheading {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+  color: #1b2f3f;
+  margin-right: 1.5rem;
+}
+.storiescardsubText {
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #405261;
+}
+.storiesCategoryWrapper {
+  display: flex;
+  margin: 0rem 0rem 1.5rem 1.5rem;
+}
+.storiesCategory {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: #9b2f9b;
+}
+.storiesSecondCategory {
+  margin-left: 1rem;
+}
+.featuredWork {
+  padding: 10% 0% 8%;
+}
+.featuredWorkTitle {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+.featuredWorkSubWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.featuredWorkHeading {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #ffffff;
+  width: 70%;
+}
+.featuredWorkButtonWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.featuredWorkButtonText {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 10px;
+  background: #ffffff;
+  border-radius: 100px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #9b2f9b;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+@media only screen and (min-width: 1250px) and (max-width: 1450px) {
+  .storiesComponyImage {
+    height: 600%;
+    position: absolute;
+    top: -330%;
+  }
+}
+@media only screen and (min-width: 1135px) and (max-width: 1250px) {
+  .stories {
+    padding: 5rem 5.375rem;
+  }
+  .storiesComponyImage {
+    height: 500%;
+    position: absolute;
+    top: -270%;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1135px) {
+  .stories {
+    padding: 5rem 5.375rem;
+  }
+  .storiescards {
+    grid-template-columns: auto auto;
+  }
+  .storiescard {
+    margin-top: 2rem;
+  }
+  .storiescardcenter {
+    margin-top: 2rem;
+  }
+  .storiesComponyImage {
+    height: 600%;
+    position: absolute;
+    top: -330%;
+  }
+}
+@media (max-width: 900px) {
+  .backgroundImage {
+    display: none;
+  }
+  .storiesComponyImage {
+    height: 500%;
+    position: absolute;
+    top: -280%;
+  }
+}
+
+@media (max-width: 800px) {
+  .stories {
+    padding: 5rem 6.66% 0rem;
+    background: linear-gradient(white 65%, #9b2f9b 35%);
+  }
+  .storiestop {
+    margin: 0rem 0rem 2.5rem;
+    text-align: start;
+  }
+  .storiesheading {
+    font-size: 32px;
+    line-height: 120%;
+  }
+  .storiessubText {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+  }
+  .storiescards {
+    display: grid;
+    grid-template-columns: auto;
+    width: 75vw;
+    margin: auto;
+  }
+  .storiescard {
+    min-width: 100%;
+  }
+  .storiescardcenter {
+    margin: 1.5rem 0rem;
+  }
+  .storiesMobileCardHidden {
+    display: none;
+  }
+  .storiesCompanyWrapper {
+    margin-top: 0.5rem;
+  }
+  .storiesComponyImage {
+    top: -300%;
+  }
+  .storiescardheading {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .storiescardtext {
+    margin: 1.5rem 1.5rem 2.5rem;
+  }
+  .storiescardsubText {
+    font-size: 17.1429px;
+  }
+  .storiesCategoryWrapper {
+    margin: 0rem 0rem 1.25rem 1.25rem;
+  }
+  .storiesCategory {
+    font-size: 16px;
+  }
+  .featuredWork {
+    padding: 12% 0% 10%;
+  }
+  .featuredWorkSubWrapper {
+    flex-direction: column;
+  }
+  .featuredWorkHeading {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 2.5rem;
+  }
+  .featuredWorkButtonWrapper {
+    align-items: flex-start;
+  }
+}
+@media (max-width: 550px) {
+  .storiescards {
+    width: 100%;
+  }
+}

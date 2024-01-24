@@ -1,0 +1,388 @@
+.worldMapWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8.125rem 6.813rem;
+}
+.worldMapHeading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #1b2f3f;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.worldMap {
+  position: relative;
+}
+.worldMapImage {
+  position: relative;
+}
+.worldMapDot1 {
+  position: absolute;
+  top: 30.5%;
+  left: 14.5%;
+}
+.usaPopup {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.popupPosition {
+  width: 180px;
+  height: 80px;
+  background-color: var(--primary);
+  position: relative;
+  padding: 15px;
+  border-radius: 10px;
+  top: calc(30.5% + 35px);
+  left: calc(14.5% - 80px);
+  color: white;
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
+.popupPosition:after {
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  border-bottom: 10px solid var(--primary);
+  width: 0;
+  height: 0;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.worldMapDot2 {
+  position: absolute;
+  top: 54%;
+  left: 69.5%;
+}
+.indiaMapWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8.125rem 12.813rem;
+}
+.indiaMapDiv {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100%;
+}
+.indiaMap {
+  width: 65%;
+  height: 100%;
+  max-height: 100%;
+  max-width: 65%;
+  position: relative;
+}
+.indiaMapHeading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #1b2f3f;
+  text-align: center;
+  margin-right: 33%;
+}
+.addressWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 35%;
+  overflow-y: auto;
+  height: 70vh;
+  z-index: 99;
+  background: var(--white);
+}
+.addressWrapper::-webkit-scrollbar {
+  display: none;
+}
+.addressDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 21.033px;
+  border: 0.876374px solid #d1dae7;
+  color: #1b2f3f;
+  box-sizing: border-box;
+  border-radius: 14.022px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 16px 0px;
+  width: 100%;
+}
+.activeAddressDiv {
+  background: #9b2f9b;
+  color: var(--white) !important;
+  order: 0;
+}
+.addressTextWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 7.01099px 0px;
+}
+.cityName {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17.5275px;
+  line-height: 21px;
+  text-align: center;
+  color: inherit;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 7.01099px 0px;
+}
+.cityAddress {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.7747px;
+  line-height: 19px;
+  color: inherit;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 7.01099px 0px;
+}
+.cityPhoneWrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 7.01099px 0px;
+}
+.cityPhoneNumber {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15.7747px;
+  line-height: 19px;
+  color: inherit;
+}
+
+.Modal {
+  top: 70px;
+  margin-top: 5vh !important;
+  bottom: 0px;
+  background: #ffffff;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  padding: 65px 70px 40px 70px;
+  height: 80vh;
+  width: 62%;
+  margin: auto;
+  z-index: 100;
+}
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.mobileMapWrapper {
+  display: none;
+}
+.phoneIcon {
+  margin-right: 10px;
+}
+
+@media only screen and (min-width: 1501px) and (max-width: 1650px) {
+  .indiaMapWrapper {
+    padding: 7.125rem 6.813rem;
+  }
+  .addressWrapper {
+    height: 66vh;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1500px) {
+  .worldMapWrapper {
+    padding: 6.125rem 5.813rem;
+  }
+  .indiaMapWrapper {
+    padding: 7.125rem 4.813rem;
+  }
+  .addressWrapper {
+    height: 63vh;
+  }
+}
+@media only screen and (min-width: 1176px) and (max-width: 1299px) {
+  .worldMapWrapper {
+    padding: 5.125rem 4.813rem;
+  }
+  .indiaMapWrapper {
+    padding: 6.125rem 2.813rem;
+  }
+  .addressWrapper {
+    height: 61vh;
+  }
+}
+@media only screen and (min-width: 1050px) and (max-width: 1175px) {
+  .worldMapWrapper {
+    padding: 5.125rem 4.813rem;
+  }
+  .indiaMapWrapper {
+    padding: 6.125rem 2.813rem;
+  }
+  .addressWrapper {
+    height: 58vh;
+  }
+}
+@media only screen and (min-width: 951px) and (max-width: 1049px) {
+  .worldMapWrapper {
+    padding: 4.125rem 3.813rem;
+  }
+  .indiaMapWrapper {
+    padding: 2.125rem 0.813rem;
+  }
+  .addressWrapper {
+    height: 58vh;
+  }
+}
+@media only screen and (min-width: 801px) and (max-width: 950px) {
+  .worldMapWrapper {
+    padding: 4.125rem 3.813rem;
+  }
+  .indiaMapWrapper {
+    padding: 2.125rem 0.813rem;
+  }
+  .addressWrapper {
+    height: 47vh;
+  }
+}
+@media (max-width: 800px) {
+  .mapWrapper {
+    display: none;
+  }
+  .Modal {
+    display: none;
+  }
+  .mobileMapWrapper {
+    background-color: #ffffff;
+    text-align: center;
+    display: block;
+  }
+  .mobileMapHeading {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #182f43;
+    margin: 4.5rem 1.5rem 1.5rem;
+    padding: 0rem;
+    padding-bottom: 2rem;
+    text-align: start;
+  }
+  .sliderWrapper {
+    margin: 0rem 1.5rem 4.5rem;
+  }
+  .addressDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #ffffff;
+    border: 1px solid #d1dae7;
+    box-sizing: border-box;
+    border-radius: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0rem 1rem;
+    width: 80% !important;
+    text-align: center;
+    opacity: 1;
+    min-height: 230px;
+    /* max-height: 200px; */
+  }
+  .addressTextWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0.5rem 0rem;
+  }
+  .cityName {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.313rem;
+    text-align: center;
+    color: #1b2f3f;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0.5rem 0rem;
+  }
+  .cityAddress {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.188rem;
+    color: #1b2f3f;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0.5rem 0rem;
+  }
+  .cityPhoneWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem;
+  }
+  .cityPhoneNumber {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #1b2f3f;
+  }
+}
+.chip {
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #d4a8d4;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+}

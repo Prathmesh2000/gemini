@@ -1,0 +1,28 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    width: 100%;
+    padding: 50px;
+    margin-left: 5%;
+    left: 5%;
+    right: 0;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        gap: 0;
+    }
+}

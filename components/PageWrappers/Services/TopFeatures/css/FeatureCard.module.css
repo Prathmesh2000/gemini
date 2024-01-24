@@ -1,0 +1,58 @@
+.cardWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 30vw;
+    height: max-content;
+    max-width: 350px;
+}
+
+.iconWrapper {
+    display: flex;
+    margin-right: 10px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    width: 70%;
+    height: 100%;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1B2F3F;
+    margin-bottom: 10px;
+}
+
+.content {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #1B2F3F;
+}
+
+@media screen and (max-width: 1000px) {
+    .cardWrapper {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cardWrapper {
+        width: 90vw;
+        max-width: 500px;
+        margin: 20px
+    }
+}

@@ -1,0 +1,592 @@
+.nav_section {
+  width: 100%;
+}
+
+.nav_content {
+  font-size: 2rem;
+  position: relative;
+  z-index: 111 !important;
+}
+
+.nav_wrapper {
+  width: 100%;
+  height: 86px;
+}
+
+@keyframes navbarAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.navbar {
+  animation: 2s linear 0s 1 navbarAnimation;
+  height: 100%;
+}
+
+.navbar_small {
+  display: none;
+}
+
+.padding_wrapper {
+  padding: 0 8%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.full_menu .padding_wrapper {
+  background-color: transparent;
+}
+
+.logo_wrapper {
+  width: 40%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 52px;
+}
+
+.menu_list {
+  width: 60%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
+.menu_list ul {
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  max-width: 625px;
+  list-style-type: none;
+}
+
+.menu_list li {
+  padding-right: 50px;
+  height: 52px;
+  font-family: "SF Pro Display";
+  font-weight: 500;
+  font-size: 20px;
+  color: #1B2F3F;
+}
+
+.menu_list a {
+  text-decoration: none;
+}
+
+.search_icon {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0 !important;
+}
+
+.search_icon img {
+  cursor: pointer;
+}
+
+.sol_menu_arrow {
+  position: relative;
+  margin-left: 10px;
+}
+
+.full_menu .solutions {
+  color: var(--primary) !important;
+}
+
+.full_menu .sol_menu_arrow img {
+  width: 12px !important;
+  height: 8px !important;
+}
+
+.menu_item {
+  cursor: pointer;
+}
+
+.full_menu {
+  background: var(--white) !important;
+}
+
+.full_menu .menu_item {
+  color: var(--dark-secondary);
+}
+
+.full_menu_wrapper {
+  position: absolute;
+  height: 396px;
+  width: 100%;
+  background-color: var(--white);
+  top: 86px;
+  opacity: 0;
+}
+
+.open_menu {
+  opacity: 1;
+  transition: all 1s;
+}
+
+.h_line {
+  height: 1px;
+  width: 100%;
+  background-color: var(--gray-light);
+}
+
+.full_menu_content {
+  height: calc(100% - 1px);
+  padding: 48px 0 68px 0;
+  padding: 48px 8% 68px 8%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.details {
+  width: 267px;
+  height: 100%;
+  padding-right: 10px;
+}
+
+.details_content {
+  font-family: "SF Pro Display";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
+}
+
+.link {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 20px;
+  font-family: "SF Pro Display";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--primary);
+  margin: 8px 0;
+}
+
+.link a:hover {
+  font-weight: 600;
+}
+
+.link .content {
+  padding-right: 10px;
+  width: 80px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 44px 48px;
+  min-width: 789px;
+  width: 789px;
+  height: 100%;
+}
+
+.options .option {
+  width: 231px;
+  height: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.option .option_head {
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "SF Pro Display";
+  font-weight: 600;
+  color: var(--dark);
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.option .option_content {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  color: var(--dark-secondary);
+  width: 100%;
+}
+
+.option:hover {
+  cursor: pointer;
+}
+
+.option:hover span {
+  color: var(--primary) !important;
+}
+
+.mobile_logo {
+  width: 194px;
+}
+
+.mobile_nav {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #d1dae7;
+}
+
+.mobile_nav .logo {
+  width: 194px;
+  margin-left: 24px;
+  position: relative;
+}
+
+.mobile_nav .menu_icon {
+  width: 30px;
+  margin-right: 36px;
+  position: relative;
+  cursor: pointer;
+}
+
+.mobile_nav_content {
+  width: 100%;
+  height: calc(100% - 56px);
+  padding-top: 31px;
+  overflow-y: auto;
+}
+
+.solutions_open .solutions_menu {
+  color: var(--primary);
+}
+
+.mobile_menu_options .menu_open_icon img {
+  height: 8px !important;
+  min-height: 13px !important;
+  width: 8px !important;
+  min-width: 13px !important;
+}
+
+.mobile_menu_options {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.mobile_menu_option {
+  width: 100%;
+  min-height: 44px;
+  padding: 0 24px;
+  margin-bottom: 24px;
+}
+
+.mobile_menu_option_wrapper {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #d1dae7;
+}
+
+.mobile_menu_option_content {
+  height: 36px;
+  width: 100%;
+  padding-bottom: 8px;
+  display: flex;
+  flex-flow: row nowrap;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.mobile_menu_option_content span {
+  width: calc(100% - 28px);
+  line-height: 36px;
+  font-size: 20px;
+}
+
+.mobile_menu_option_content a {
+  width: 100%;
+}
+
+.mobile_menu_option_content .menu_open_icon {
+  width: 28px;
+  height: 100%;
+  position: relative;
+}
+
+.mobile_solutions_sub_menu {
+  height: auto;
+  width: 100%;
+  padding: 8px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 16px;
+}
+
+.mobile_menu_item {
+  width: 100%;
+  height: auto;
+  padding-bottom: 4px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.mobile_menu_option_content:hover span,
+.mobile_menu_item:hover span {
+  color: var(--primary) !important;
+  cursor: pointer;
+}
+
+.menu_item_head {
+  width: 100%;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "SF Pro Display";
+  font-weight: 600;
+  color: var(--dark);
+  padding-bottom: 8px;
+}
+
+.menu_item_content {
+  width: 100%;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  color: var(--dark-secondary);
+}
+
+@media screen and (max-width: 1300px) {
+  .logo_wrapper {
+    width: 30%;
+  }
+
+  .menu_list {
+    width: 70%;
+  }
+}
+
+/* Nav medium */
+@media screen and (min-width: 1100px) and (max-width: 1300px) {
+  .padding_wrapper {
+    padding: 0 5%;
+  }
+
+  .full_menu_content {
+    padding: 48px 5% 68px 5%;
+  }
+
+  .options {
+    min-width: 689px;
+    width: 689px;
+    grid-gap: 44px 28px;
+  }
+
+  .options .option {
+    width: 211px;
+  }
+}
+
+/* Nav medium */
+@media screen and (min-width: 950px) and (max-width: 1100px) {
+  .padding_wrapper {
+    padding: 0 3%;
+  }
+
+  .full_menu_content {
+    padding: 48px 3% 68px 3%;
+  }
+
+  .full_menu_wrapper {
+    height: 426px;
+  }
+
+  .options {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 44px 48px;
+    min-width: 530px;
+    width: 530px;
+  }
+
+  .options .option {
+    width: 231px;
+  }
+}
+
+/* Nav below medium */
+@media screen and (max-width: 950px) {
+  .navbar {
+    display: none !important;
+  }
+
+  .nav_wrapper {
+    height: 56px;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+
+  .navbar_small_open {
+    height: 100% !important;
+  }
+
+  .navbar_small {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+  }
+}
+
+.brandLogo {
+  width: 251px !important;
+  height: 46px !important;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.outer {
+  position: relative;
+  /* width: 100%; */
+  /* height: 140%; */
+}
+
+.outer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* min-height: 140%;
+  max-height: 140%; */
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.companySlogans {
+  display: none;
+  transition-delay: 0.6s;
+  margin-left: 11vw;
+  margin-top: 45vh;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.sloganMain {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: var(--white);
+  max-width: 400px;
+  padding-bottom: 32px;
+}
+
+.sloganChild {
+  animation: 1.5s ease-out 0.05s 1 slideInFromLeft;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--white);
+  max-width: 400px;
+  padding-bottom: 56px;
+}
+
+.buttonWrapper {
+  display: none;
+  animation: 1s ease-out 0s 1 slideInFromBottom;
+  display: flex;
+  justify-content: space-between;
+  margin: 0vw 11vw 0vw 11vw;
+}
+
+.buttonKnowMore {
+  display: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  width: 144px;
+  height: 48px;
+  border: 1px solid var(--white);
+  box-sizing: border-box;
+  border-radius: 100px;
+  background-color: transparent;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  font-size: 16px;
+  color: #ffffff;
+  order: 0;
+  transition: 0.5s linear;
+}
+
+@media (max-width: 800px) {
+  .bottomArrow {
+    display: none !important;
+  }
+}
+
+.buttonKnowMore:hover {
+  background-color: whitesmoke;
+  color: #013355;
+  width: 200px;
+}
+
+.buttonKnowMoreArrow {
+  display: none;
+}
+
+.buttonKnowMore:hover .buttonKnowMoreArrow {
+  display: block !important;
+}

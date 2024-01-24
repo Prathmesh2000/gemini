@@ -1,0 +1,52 @@
+{
+  /**
+  * Application configuration section
+  * http://pm2.keymetrics.io/docs/usage/application-declaration/
+  */
+  "apps" : [
+    {
+      "name"                 : "geminisolutions-website",
+      "script"               : "npm",
+      "args"                 : "start",
+      "append_env_to_name"   : true,
+      "instances"            : 1,
+      "merge_logs"           : true,
+      "autorestart"          : true,
+      "exec_mode"            : "fork",
+      "max_memory_restart"   : "1000M"
+    }
+  ],
+
+  /**
+  * Deployment section
+  * http://pm2.keymetrics.io/docs/usage/deployment/
+  */
+  "deploy" : {
+    "dev" : {
+      "user" : "gemini",
+      "host" : "gs.dev.devathon.com",
+      "ref"  : "origin/dev",
+      "repo" : "git@gitlab.crypsis.net:geminisolutions/geminisolutions-website.git",
+      "path" : "/home/gemini/webapps/website",
+      "pre-deploy": "git checkout .",
+      "post-deploy" : ". /home/gemini/.nvm/nvm.sh && nvm use 17 && npm install --legacy-peer-deps && npm run build && pm2 startOrRestart pm2.json --env dev",
+      "env"  : {
+        "NODE_ENV": "production",
+        "PORT": "8301"
+      }
+    },
+    "staging" : {
+      "user" : "ubuntu",
+      "host" : "gs.staging.devathon.com",
+      "ref"  : "origin/staging",
+      "repo" : "git@gitlab.crypsis.net:geminisolutions/geminisolutions-website.git",
+      "path" : "/home/ubuntu/webapps/website",
+      "pre-deploy": "git checkout .",
+      "post-deploy" : ". /home/ubuntu/.nvm/nvm.sh && nvm use 18 && npm install --legacy-peer-deps && npm run build && pm2 startOrRestart pm2.json --env staging",
+      "env"  : {
+        "NODE_ENV": "production",
+        "PORT": "8301"
+      }
+    }
+  }
+}

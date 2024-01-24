@@ -1,0 +1,295 @@
+.headerBox {
+  width: 100%;
+  margin-top: 10%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+
+.headertitle {
+  font-family: "SF Pro Display";
+  max-width: 900px !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  color: #182f43;
+}
+
+.headerInnerBox {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.headersubtitle {
+  max-width: 600px !important;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #405261;
+}
+
+.actionButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: 28%;
+  margin-right: 20%;
+  margin-bottom: 5%;
+}
+
+.actionPrevIcons {
+  width: 50px;
+  height: 50px;
+  background: url("../../public/leftArrow.svg") no-repeat center;
+  border: none;
+  cursor: pointer;
+}
+
+.actionNextIcons {
+  width: 50px;
+  height: 50px;
+  background: url("../../public/rightArrow.svg") no-repeat center;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  /* -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(0, 0, 0, 1)),
+    to(rgba(0, 0, 0, 0.65))
+  ); */
+  width: 100%;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+.testimonialBox {
+  display: flex;
+  width: 100% !important;
+  height: 100% !important;
+}
+.lastcard {
+  opacity: 0.7;
+}
+
+.box1 {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.titleBox {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.title {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #182f43;
+}
+
+.subtitle {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #405261;
+}
+
+.contentBox {
+  width: 90%;
+  max-width: 350px;
+  margin-left: 0%;
+  border-left: 3.5px solid #f0f3f6;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #405261;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.companyLogo {
+  max-height: 80px;
+}
+
+.actionButtonMobile {
+  display: none;
+  align-items: center;
+  justify-content: right;
+}
+.rewardingtext {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57px;
+  letter-spacing: 0.04em;
+  opacity: 0.15;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-color: #9b2f9b;
+  -webkit-text-stroke-width: 1px;
+}
+.dotWrapper {
+  padding: 0px;
+  position: initial;
+  text-align: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5%;
+  width: 87%;
+}
+@media only screen and (max-width: 800px) {
+  .headerBox {
+    width: 95% !important;
+    margin-left: 1.5rem;
+    margin-top: 8.625rem;
+  }
+
+  .actionButton {
+    display: none;
+  }
+
+  .headerInnerBox {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .headertitle {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .headersubtitle {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .actionButtonMobile {
+    display: flex;
+  }
+  .title {
+    font-size: 14.1942px;
+    line-height: 18px;
+  }
+  .subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .contentBox {
+    font-size: 15.9685px;
+    line-height: 20px;
+  }
+  .container {
+    margin-left: 1.5rem;
+    margin-bottom: 4.3rem;
+  }
+  .rewardingtext {
+    display: none;
+  }
+  .button__bar {
+    padding: 0px !important;
+    justify-content: space-between !important;
+  }
+}
+
+/* Slick Dots css */
+.button__bar {
+  padding: 0px;
+  position: initial;
+  width: 85%;
+  text-align: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5%;
+  padding-left: 40%;
+}
+
+.button__bar li {
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 3px;
+  padding: 0;
+}
+
+.button__bar li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  outline: none;
+  background: #1b2f3f;
+  border-radius: 10px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  border: none;
+  outline: none;
+}
+
+.button__bar li.slick-active button {
+  background-color: white;
+}
+
+.slick-slide img {
+  border: 5px solid #fff;
+  display: block;
+  margin: auto;
+}
+
+.button__bar :global(li.slick-active) button {
+  background: #9b2f9b;
+  border-radius: 10px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 8px;
+  width: 40px;
+  border: none;
+  outline: none;
+}

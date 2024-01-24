@@ -1,0 +1,57 @@
+.categoryWrapper {
+    background: #FFFFFF;
+    border: 1px solid #D1DAE7;
+    border-radius: 16px;
+   width: fit-content;
+    height: fit-content;
+    min-width: 250px;
+}
+
+
+.category {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;  
+    font-size: 20px;
+    line-height: 30px;
+    padding:  24px 32px 24px 32px;
+    
+    color: #1B2F3F;
+}
+
+.selectedCategory {
+    color: white;
+    background: #205072;
+    border-radius: 16px;
+}
+
+.categoryDropdown {
+    background-color: #205072;
+    margin: 32px, 0px, 0px, 0px;
+  
+      
+}
+
+
+/* .categoryDropdown {
+    background-color: #205072;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 10px;
+} */
+
+@media screen and (max-width: 950px) {
+    .categoryWrapper {
+        display: none;
+    }    
+}
+
+@media screen and (min-width: 950px) {
+    .categoryDropdownWrapper {
+        display: none;
+    }
+}

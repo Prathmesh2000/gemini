@@ -1,0 +1,151 @@
+/* session insights */
+.session {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.sessioncontainer {
+  background: #fbf1fb;
+  border-radius: 64px;
+  width: 65%;
+  padding: 7.5rem 6.063rem;
+  margin: 5rem 0rem;
+  z-index: 10;
+}
+
+.sessioncardtext {
+  text-align: center;
+  margin-bottom: 3.125rem;
+}
+
+.sessionHeading1 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #9b2f9b;
+}
+
+.sessionHeading2 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #1b2f3f;
+  margin: 2rem 0rem;
+}
+
+.sessionDescription {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #405261;
+}
+
+.sessionButtonWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.sessionButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border: none;
+  outline: none;
+  position: absolute;
+  background: #9b2f9b;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+}
+
+.sessionButtonText {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.sessionBackgroundImage {
+  position: absolute;
+  right: 11%;
+}
+
+@media (min-width: 1900px) {
+  .sessionBackgroundImage {
+    position: absolute;
+    right: 13%;
+  }
+}
+
+@media only screen and (min-width: 1700px) and (max-width: 1900px) {
+  .sessionBackgroundImage {
+    position: absolute;
+    right: 13%;
+  }
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1700px) {
+  .sessionBackgroundImage {
+    position: absolute;
+    right: 13%;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1100px) {
+  .sessioncontainer {
+    width: 75%;
+  }
+}
+
+@media (max-width: 800px) {
+  .sessioncontainer {
+    border-radius: 32px;
+    width: 82%;
+    margin: 5.625rem 0rem 2.5rem;
+    padding: 2.5rem 1rem 5.5rem;
+  }
+
+  .sessioncardtext {
+    margin-bottom: 3rem;
+  }
+
+  .sessionHeading1 {
+    letter-spacing: 2px;
+  }
+
+  .sessionHeading2 {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 1.5rem 0rem 1rem;
+  }
+
+  .sessionButtonText {
+    line-height: 18px;
+  }
+
+  .sessionBackgroundImage {
+    position: absolute;
+    right: 6%;
+  }
+}

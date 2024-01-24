@@ -1,0 +1,390 @@
+.careers {
+  padding: 4% 0rem 3% 0rem;
+  width: 100%;
+}
+.relative {
+  position: relative;
+}
+.careersBlock {
+  padding: 0% 2% 0% 10%;
+}
+.careersWrapper {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: auto;
+  z-index: 5;
+}
+.contentMainWrapper {
+  width: 50%;
+}
+.careersMobileImageWrapper {
+  display: none;
+}
+.careersDots {
+  position: absolute !important;
+  z-index: 10 !important;
+  top: 23.4% !important;
+}
+.careersImageWrapper {
+  width: 50%;
+  position: relative;
+  /* position: relative;
+  grid-column: 2;
+  grid-row: 1 / span 2; */
+}
+.overlapedBackground {
+  position: relative;
+  width: 90% !important;
+  min-width: 90% !important;
+  max-width: 90% !important;
+  height: 90% !important;
+  min-height: 90% !important;
+  max-height: 90% !important;
+}
+.careersVideo {
+  position: absolute;
+  top: 30.5%;
+    left: 33.7%;
+    width: 42% !important;
+  /* min-width: 64% !important; */
+  /* max-width: 69% !important; */
+}
+.careersVideoWrapper {
+  border-radius: 15px;
+}
+.careersContent {
+  padding: 0.813rem 0rem 4.989rem 0rem;
+}
+.careersMainText {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #9b2f9b;
+  margin: 0rem 0rem 1rem;
+}
+.careersSubText {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #405261;
+  margin: 0rem;
+}
+.careersSubContentWrappper {
+  padding: 4.563rem 0rem 4.968rem 0rem;
+  /* background: #fbf1fb; */
+}
+.careersParagraph {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #405261;
+  margin: 0rem;
+}
+
+.careersSubcontentBottom {
+  margin: 3.188rem 0rem 0rem;
+  display: flex;
+  align-items: self-end;
+  /* justify-content: space-around; */
+}
+.careersButtonWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.careersButtonHeading {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: #1b2f3f;
+  margin: 0rem 4.138rem 2rem 0rem;
+}
+.careersButtonText {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #9b2f9b;
+  box-sizing: border-box;
+  border-radius: 22px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9b2f9b;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0.5rem;
+  cursor: pointer;
+}
+.careersButtonText:hover{
+  background-color: #9b2f9b;
+  border-color: #9b2f9b;
+  color:white
+}
+@media only screen and (min-width: 1900px) and (max-width: 2000px) {
+  .careersVideo {
+    top: 31%;
+    left: 32.7%;
+    width: 44% !important;
+  }
+}
+@media only screen and (min-width: 1800px) and (max-width: 1900px) {
+  .careersVideo {
+    top: 31.5%;
+    left: 31.7%;
+    width: 47% !important;
+  }
+}
+@media only screen and (min-width: 1700px) and (max-width: 1800px) {
+  .careersVideo {
+    width: 50.5% !important;
+    top: 30.5%;
+    left: 31.1%;
+  }
+}
+@media only screen and (min-width: 1600px) and (max-width: 1700px) {
+  .careersVideo {
+    width: 54% !important;
+    top: 30.5%;
+    left: 29.7%;
+  }
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1600px) {
+  .careersVideo {
+    width: 57% !important;
+    top: 31%;
+    left: 29.7%;
+  }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1500px) {
+  .careersVideo {
+  top: 30.5%;
+  left: 28.7%;
+  width: 61% !important;
+  }
+}
+@media only screen and (min-width: 1350px) and (max-width: 1400px) {
+  .careersVideo {
+    top: 31% !important;
+    left: 28.7% !important;
+    width: 60% !important;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1350px) {
+  .careersVideo {
+    top: 32.5% !important;
+    left: 28.7% !important;
+    width: 60% !important;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+  .careersVideo {
+    top: 32.5% !important;
+    left: 28.7% !important;
+    width: 61% !important;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .careersDots {
+    z-index: 10 !important;
+  }
+}
+@media only screen and (min-width: 1151px) and (max-width: 1200px) {
+  .careersVideo {
+    top: 33% !important;
+    left: 28.2% !important;
+    width: 61% !important;
+  }
+}
+@media only screen and (min-width: 1100px) and (max-width: 1150px) {
+  .careersVideo {
+    top: 34% !important;
+    left: 28.2% !important;
+    width: 61% !important;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1100px) {
+  .careersVideo {
+    top: 33% !important;
+    left: 28.7% !important;
+    width: 60% !important;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1000px) {
+  .careersVideo {
+    top: 33% !important;
+    left: 28.2% !important;
+    width: 60% !important;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1100px) {
+  .careersContent {
+    padding: 0.313rem 0rem 1.989rem 0rem;
+  }
+
+  .careersSubContentWrappper {
+    padding: 3.563rem 0rem 1.468rem 0rem;
+  }
+  .careersMainText {
+    font-size: 36px;
+    line-height: 43px;
+    margin: 0rem 0rem 1rem;
+  }
+  .careersSubText {
+    font-size: 26px;
+    line-height: 31px;
+  }
+  .careersParagraph {
+    font-weight: 450;
+    font-size: 22px;
+    line-height: 29px;
+  }
+  .careersButtonHeading {
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0rem 4.138rem 2rem 0rem;
+  }
+  .careersDots {
+    z-index: 10 !important;
+    top: 23% !important;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 955px) {
+  .careersContent {
+    padding: 2rem 0rem 3.989rem 0rem;
+  }
+  .careersVideo {
+    position: absolute;
+    top: 36% !important;
+    left: 29% !important;
+    width: 59% !important;
+  }
+  .careersDots {
+    z-index: 10 !important;
+    top: 23% !important;
+  }
+}
+@media only screen and (min-width: 620px) and (max-width: 899px) {
+  .careersWrapper {
+    text-align: center !important;
+  }
+  .careersSubcontentBottom {
+    justify-content: center !important;
+  }
+  .careersMainText {
+    font-size: 50px !important;
+    line-height: 58px !important;
+    margin: 0rem 0rem 1rem !important;
+  }
+  .careersSubText {
+    font-size: 32px !important;
+    line-height: 36px !important;
+  }
+  .careersParagraph {
+    font-weight: 400;
+    font-size: 28px !important;
+    line-height: 34px !important;
+  }
+  .careersButtonHeading {
+    font-size: 32px !important;
+    line-height: 35px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .careersDots {
+    display: none;
+  }
+  .careersBlock {
+    padding: 0%;
+  }
+  .careersWrapper {
+    /* position: relative; */
+    grid-template-columns: auto;
+    background: linear-gradient(to bottom, white 26%, #fbf1fb 26%);
+    z-index: 5;
+    text-align: start;
+  }
+  .contentMainWrapper {
+    width: 100%;
+  }
+  .careersContent {
+    padding: 9.98% 6.66% 2rem 6.66%;
+  }
+  .careersMainText {
+    font-size: 32px;
+    line-height: 38px;
+    margin: 0rem 0rem 0.5rem;
+  }
+  .careersSubText {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .careersSubContentWrappper {
+    padding: 3rem 6.66% 4rem 6.66%;
+    /* background: #fbf1fb; */
+  }
+  .careersParagraph {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .careersSubcontentBottom {
+    margin: 2.5rem 0rem 0rem;
+    display: flex;
+    /* justify-content: space-around; */
+  }
+  .careersButtonHeading {
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+  .careersButtonText {
+    padding: 0.5rem 1.5rem;
+    font-family: "SF Pro Display";
+    margin: 0px 0.5px;
+  }
+  .careersMobileImageWrapper {
+    display: block;
+    position: relative;
+  }
+  .overlapedMobileBackground {
+    position: relative;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    min-height: 100% !important;
+    max-height: 100% !important;
+  }
+  .careersMobileVideo {
+    position: absolute;
+    top: 36.5%;
+    left: 31%;
+    width: 52% !important;
+    min-width: 64% !important;
+    max-width: 69% !important;
+  }
+  .careersArrow {
+    display: none;
+  }
+  .careersImageWrapper {
+    display: none;
+  }
+}

@@ -1,0 +1,211 @@
+.card {
+  margin: 8.44% 10.41% 6.11%;
+  display: flex;
+}
+.textWrapper {
+  width: 50%;
+}
+.subHeading {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #9b2f9b;
+  margin-bottom: 1rem;
+}
+.heading {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  text-transform: capitalize;
+  color: #1b2f3f;
+  margin-bottom: 1.0625rem;
+}
+.text {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1b2f3f;
+  margin-bottom: 0.5rem;
+}
+.paragraph {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #405261;
+}
+.imageContainer {
+  background: linear-gradient(90deg, white 55%, rgb(251, 241, 251) 45%);
+  border-radius: 16px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin-left: 1.375rem;
+  position: relative;
+}
+.imageWrapper {
+  position: relative;
+  height: 80%;
+  margin: auto;
+}
+.dots {
+  position: absolute;
+  bottom: -10%;
+  left: -25%;
+  z-index: 0;
+}
+.dotsMobile{
+  display: none;
+}
+.teamImage {
+  z-index: 10;
+  height: 100%;
+  position: relative;
+}
+.family {
+  position: absolute;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 76px;
+  letter-spacing: 0.04em;
+  opacity: 0.5;
+  top: -11%;
+  right: 0%;
+  z-index: 0;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #9b2f9b;
+  -webkit-text-stroke-width: 1px;
+  /* text-shadow: -2px -2px #3c79e6, -2px -1.5px #3c79e6, -2px -1px #3c79e6,
+      -2px -0.5px #3c79e6, -2px 0px #3c79e6, -2px 0.5px #3c79e6, -2px 1px #3c79e6,
+      -2px 1.5px #3c79e6, -2px 2px #3c79e6, -1.5px 2px #3c79e6, -1px 2px #3c79e6,
+      -0.5px 2px #3c79e6, 0px 2px #3c79e6, 0.5px 2px #3c79e6, 1px 2px #3c79e6,
+      1.5px 2px #3c79e6, 2px 2px #3c79e6, 2px 1.5px #3c79e6, 2px 1px #3c79e6,
+      2px 0.5px #3c79e6, 2px 0px #3c79e6, 2px -0.5px #3c79e6, 2px -1px #3c79e6,
+      2px -1.5px #3c79e6, 2px -2px #3c79e6, 1.5px -2px #3c79e6, 1px -2px #3c79e6,
+      0.5px -2px #3c79e6, 0px -2px #3c79e6, -0.5px -2px #3c79e6, -1px -2px #3c79e6,
+      -1.5px -2px #3c79e6; */
+}
+@media (max-width: 1400px) {
+  .dots{
+    left: -15%;
+  }
+  }
+  @media (max-width: 1250px) {
+    .imageWrapper {
+      height: 70%;
+    }
+    .dots{
+      left: -10%;
+    }
+    }
+@media only screen and (min-width: 1050px) and (max-width: 1250px) {
+  .imageContainer {
+    background: linear-gradient(90deg, white 35%, rgb(251, 241, 251) 65%);
+  }
+}
+@media (max-width: 1050px) {
+  .imageWrapper {
+    height: 65%;
+  }
+  .dots{
+    left: -3%;
+  }
+  }
+@media only screen and (min-width: 950px) and (max-width: 1050px) {
+  .imageContainer {
+    background: linear-gradient(90deg, white 20%, rgb(251, 241, 251) 80%);
+  }
+  .dots{
+    left: 0%;
+  }
+  .imageWrapper {
+    height: 60%;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 950px) {
+  .imageWrapper{
+    width: 70% !important;
+  }
+  .teamImage {
+    padding: 10% 0% !important;
+  }
+  .family{
+    top: 0% !important;
+  }
+}
+@media (max-width: 950px) {
+  .card {
+    margin: 11% 0%;
+    flex-direction: column;
+  }
+  .textWrapper {
+    padding: 0% 6.66%;
+    width: 100%;
+    margin-bottom: 12%;
+  }
+  .imageContainer {
+    padding-left: 6.66%;
+    margin: 0rem;
+    width: 100%;
+  }
+  .imageWrapper{
+    width: 80%;
+  }
+  .subHeading {
+    margin-bottom: 0.5rem;
+  }
+  .heading {
+    margin-bottom: 0.5rem;
+  }
+  .text {
+    margin-bottom: 1.5rem;
+  }
+  .teamImage {
+    width: 100%;
+    padding: 5% 0%;
+  }
+  .dots{
+    display: none;
+  }
+  .dotsMobile{
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+  }
+  .family{
+    right: 3%;
+    top: -3%;
+  }
+}
+@media (max-width: 600px) {
+  .teamImage {
+    padding: 7% 0%;
+  }
+}
+@media (max-width: 500px) {
+  .teamImage {
+    padding: 8.5% 0%;
+  }
+}
+@media (max-width: 410px) {
+  .teamImage {
+    padding: 12% 0%;
+  }
+}
+@media (max-width: 240px) {
+  .teamImage {
+    padding: 15% 0%;
+  }
+}

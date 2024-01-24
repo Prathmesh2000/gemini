@@ -1,0 +1,53 @@
+.headingWrapper {
+    margin: 200px 10% 64px 10%;
+    background-color: #E7F2FA;
+}
+
+.heading {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: capitalize;
+    color: #1B2F3F;
+    margin-bottom: 16px;
+}
+
+.description {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    max-width: 587px;
+    color: #405261;
+}
+
+@media screen and (max-width: 950px) {
+
+    .headingWrapper {
+        margin: 32px 10% 29px 10%;
+    }
+
+    .heading {
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        text-transform: capitalize;
+        color: #1B2F3F;
+        margin-bottom: 16px;
+    }
+
+    .description {
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        max-width: 587px;
+        color: #405261;
+    }
+}

@@ -1,0 +1,151 @@
+.vibesContainer {
+  width: 100%;
+  min-height: 90vh;
+}
+.vibesWrapper {
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-light);
+  padding: 100px 150px;
+}
+.vibes {
+  width: 100%;
+  height: 100%;
+}
+.vibesHeader {
+  height: 95px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.Head {
+  font-family: "SF Pro Display";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  height: 100%;
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+}
+.vibesContentWrapper {
+  width: 100%;
+  height: auto;
+}
+.vibesContent {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 40px 17px;
+  padding-top: 40px;
+}
+.SectionWrapper {
+  height: 230px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.ReverseWrap {
+  flex-flow: row-reverse nowrap !important;
+}
+.SectionWrapper img {
+  width: 50%;
+  height: 100%;
+  border-radius: 24px;
+  object-fit: cover;
+}
+.SectionContent {
+  width: 50%;
+  height: 100%;
+  padding: 24px 0 24px 24px;
+}
+.SectionContent span {
+  width: 100%;
+  font-family: "SF Pro Display";
+  display: flex;
+  flex-direction: column;
+  color: var(--dark);
+}
+.Title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+.Desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 1350px) {
+  .vibesWrapper {
+    padding: 80px 100px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .vibesContainer {
+    height: auto;
+  }
+  .vibesWrapper {
+    padding: 100px 150px;
+  }
+  .ReverseWrap {
+    flex-flow: row nowrap !important;
+  }
+  .vibesContent {
+    grid-template-columns: 100%;
+    grid-gap: 40px 17px;
+    padding-top: 40px;
+  }
+  .vibesHeader {
+    height: auto;
+  }
+  .Head {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .Title {
+    margin-bottom: 8px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .vibesHeader img {
+    display: none;
+  }
+  .vibesWrapper {
+    padding: 50px 100px;
+  }
+  .SectionWrapper {
+    flex-flow: column;
+    min-height: 330px !important;
+    height: auto;
+  }
+  .ReverseWrap {
+    flex-flow: column nowrap !important;
+  }
+  .SectionWrapper,
+  .SectionContent {
+    width: 100% !important;
+  }
+  .SectionWrapper img {
+    width: 100% !important;
+    border-radius: 10px;
+    max-height: 250px;
+    height: auto;
+  }
+  .vibesContent {
+    grid-template-columns: 100%;
+    grid-gap: 40px 17px;
+    padding-top: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .vibesWrapper {
+    padding: 56px 24px;
+  }
+  .SectionWrapper img {
+    max-height: 180px;
+  }
+}
